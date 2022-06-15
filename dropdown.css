@@ -1,0 +1,261 @@
+body {
+	background-color: black;
+	margin: 0;
+    overflow: hidden;
+}
+
+/**** DROPDOWN MENU: START ****/
+
+#menu {
+	display: block;
+	position: absolute;
+	top: 100px;
+	left: 15px;
+}
+
+/* Dropdown Container: START */
+div.dropdown-container {
+	background-color: #222222;
+	display: inline-block;
+	width: 250px;
+	opacity: 0.75;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+}
+div.dropdown-container:hover {
+	opacity: 1;
+}
+/* Dropdown Container: END */
+
+/* Dropdown Header: START */
+button.dropdown-header {
+	background-color: #222222;
+	text-align: left;
+	border: 1px solid #776688;
+	width: 250px;
+	height: 25px;
+	font-size: 11px;
+	font-weight: 700;
+	font-family: sans-serif;
+	padding-left: 10px;
+	line-height: 25px;
+	color: #e6e6e6;
+	transition: color .2s;
+}
+
+#mainMenuButton {
+	padding-left: 5px;
+}
+
+
+button.dropdown-header:hover {
+	background-color: #333333;
+	color: #c4c4c4;
+}
+/* Dropdown Header: END */
+
+/* Dropdown Content Container: START */
+div.dropdown-content-container {
+	width: 250px;
+	overflow: hidden;
+}
+
+div.dropdown-content-container.closed {
+	height: 0;
+}
+/* Dropdown Content Container: END */
+
+/* Content List: START */
+ul.content-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+/* Content List: END */
+
+/* Content Container: START */
+div.content-container {
+	display:flex;
+	flex-direction: row;
+	border: 1px solid #444455;
+	width: 248px;
+	height: 25px;
+}
+/* Content Container: END */
+
+/* Content Name: START */
+div.content-name {
+	width: 93px;
+	font-size: 11px;
+	font-family: sans-serif;
+	padding-left: 5px;
+	line-height: 25px;
+	color: #e6e6e6;
+}
+/* Content Name: END */
+
+/* Slider Content Container: START */
+div.slider-control-container {
+	display:flex;
+	flex-direction: row;
+	width: 150px;
+	height: 25px;
+}
+/* Slider Content Container: END */
+
+/* Slider Container: START */
+div.slider-container {
+	width: 100px;
+	height: 25px;
+}
+/* Slider Container: END */
+
+/* Slider: START */
+input.slider {
+	-webkit-appearance: none;
+	margin: 2px;
+	height: 21px;
+	width: 96px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+input.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 1px;
+	height: 25px;
+	background: #04AA6D;
+	cursor: ew-resize;
+}
+
+input.slider::-moz-range-thumb {
+	width: 1px;
+	height: 25px;
+	background: #04AA6D;
+	cursor: ew-resize;
+}
+
+::-webkit-slider-runnable-track {
+    background: #333333;
+}
+
+::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0;
+	height: 21px;
+    background: #fff;
+    box-shadow: -100vw 0 0 100vw dodgerblue;
+	border: none;
+}
+
+::-moz-range-track {
+	height: 21px;
+    background: #333333;
+}
+
+::-moz-range-thumb {
+    background: #fff;
+	height: 21px;
+    width: 20px;
+    border: 3px solid #999;
+    border-radius: 0 !important;
+    box-shadow: -100vw 0 0 100vw dodgerblue;
+    box-sizing: border-box;
+}
+
+::-ms-fill-lower { 
+    background: dodgerblue;
+}
+
+::-ms-thumb { 
+    background: #fff;
+    border: 2px solid #999;
+	height: 21px;
+    width: 20px;
+    box-sizing: border-box;
+}
+
+::-ms-ticks-after { 
+    display: none; 
+}
+
+::-ms-ticks-before { 
+    display: none; 
+}
+
+::-ms-track { 
+    background: #333333;
+    color: transparent;
+	height: 21px;
+    border: none;
+}
+/* Slider: END */
+
+/* Slider Text Container: START */
+div.slider-text-container {
+	width: 50px;
+	height: 25px;
+}
+/* Slider Text Container: END */
+
+/* Slider Text: START */
+input.slider-text {
+	border: none;
+	background: #333333;
+	margin: 2px;
+	height: 20px;
+	width: 42px;
+	outline: none;
+	font-size: 12px;
+	font-family: sans-serif;
+	color: dodgerblue;
+}
+
+input.slider-text:focus {
+	background: #666666;
+	color: #ffffff;
+}
+/* Slider Text: END */
+
+/* Selector Container: START */
+div.selector-container {
+	width: 100px;
+	height: 25px;
+}
+/* Selector Container: END */
+
+/* Selector: START */
+select.selector {
+	border: none;
+	background: #333333;
+	margin: 2px;
+	height: 20px;
+	width: 146px;
+	outline: none;
+	color: dodgerblue;
+}
+
+select.selector:focus {
+	background: #666666;
+	color: #ffffff;
+}
+/* Selector: END */
+
+
+div.checkbox-container {
+	display:flex;
+	flex-direction: row;
+	width: 150px;
+	height: 25px;
+}
+
+input.checkbox {
+	margin: 0;
+	position: relative;
+	top: 5px;
+	left: 5px;
+}
+
+/* DROPDOWN MENU: END */

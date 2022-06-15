@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="author" content="Ben Nicholson">
+		<script src="three.min.js"></script>
+		<script src="OrbitControls.js"></script>
+		<script src="dropdown.js"></script>
+		<script src="attractors.js"></script>
+		<script src="Stats.js"></script>
+        <link rel="stylesheet" href="dropdown.css">
+    </head>
+    <body>
+		<div id="menu">
+			<div class="dropdown-container">
+				<button class="dropdown-header" id="mainMenuButton" onclick="buttonClick(this)">⯆ Menu</button>
+				<div class="dropdown-content-container closed" id="mainMenuContent">
+					<button class="dropdown-header" id="attractorButton" onclick="buttonClick(this)">⯆ Attractor</button>
+					<div class="dropdown-content-container closed" id="attractorContent">
+						<ul class="content-list">
+							<li>
+								<div class="content-container">
+									<div class="content-name">attractorCount</div>
+									<div class="slider-control-container">
+										<div class="slider-container">
+											<input type="range" class="slider" id="attractorCount" onchange="sliderChange(this)">
+										</div>
+										<div class="slider-text-container">
+											<input type="text" class="slider-text" id="attractorCountText" onchange="sliderTextChange(this)">
+										</div>
+									</div>
+								</div>
+							</li>
+							
+							<li>
+								<div class="content-container">
+									<div class="content-name">attractorType</div>
+									<div class="select-container">
+										<select class="selector" id="attractorSelect" onchange="selectorChange(this)"></select>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="content-container">
+									<div class="content-name">showAxes</div>
+									<div class="checkbox-container">
+										<input type="checkbox" class="checkbox" id="showAxes" onchange="checkBoxToggle(this)">
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<button class="dropdown-header" id="arrayButton" onclick="buttonClick(this)">⯆ Array</button>
+					<div class="dropdown-content-container closed" id="arrayContent">
+						<ul class="content-list">
+							<li>
+								<div class="content-container">
+									<div class="content-name">maxSize</div>
+									<div class="slider-control-container">
+										<div class="slider-container">
+											<input type="range" class="slider" id="maxSize" onchange="sliderChange(this)">
+										</div>
+										<div class="slider-text-container">
+											<input type="text" class="slider-text" id="maxSizeText" onchange="sliderTextChange(this)">
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="content-container">
+									<div class="content-name">startAtTime</div>
+									<div class="slider-control-container">
+										<div class="slider-container">
+											<input type="range" class="slider" id="startAtTime" onchange="sliderChange(this)">
+										</div>
+										<div class="slider-text-container">
+											<input type="text" class="slider-text" id="startAtTimeText" onchange="sliderTextChange(this)">
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="content-container">
+									<div class="content-name">stopAtMaxSize</div>
+									<div class="checkbox-container">
+										<input type="checkbox" class="checkbox" id="stopAtMaxSize" onchange="checkBoxToggle(this)">
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="content-container">
+									<div class="content-name">cyclicAtMaxSize</div>
+									<div class="checkbox-container">
+										<input type="checkbox" class="checkbox" id="cyclicAtMaxSize" onchange="checkBoxToggle(this)">
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<button class="dropdown-header" id="attractorValuesButton" onclick="buttonClick(this)">⯆ Attractor Values</button>
+					<div class="dropdown-content-container closed" id="attractorValuesContent">
+						<ul class="content-list">
+							<li>
+								<div class="content-container">
+									<div class="content-name">maxSize</div>
+									<div class="slider-control-container">
+										<div class="slider-container">
+											<input type="range" class="slider" id="maxSize" onchange="sliderChange(this)">
+										</div>
+										<div class="slider-text-container">
+											<input type="text" class="slider-text" id="maxSizeText" onchange="sliderTextChange(this)">
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>
